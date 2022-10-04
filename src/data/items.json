@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Rohlik",
+    "price": 2.99,
+    "imgUrl": "/imgs/rohlik.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Mleko",
+    "price": 15.99,
+    "imgUrl": "/imgs/mleko.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Banan",
+    "price": 19.9,
+    "imgUrl": "/imgs/banan.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Cerealie",
+    "price": 79.9,
+    "imgUrl": "/imgs/cerealie.jpg"
+  }
+]
