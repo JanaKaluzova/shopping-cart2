@@ -23,20 +23,24 @@ export const StoreItem: React.FC<StoreItemProps> = ({ id, name, price, imgUrl })
         </Card.Title>
         <div className="mt-auto">
           {quantity === 0 ? (
-            <Button onClick={() => increaseCartQuantity(id)} className="w-100">
-              Add to cart
+            <Button variant="outline-primary" onClick={() => increaseCartQuantity(id)} className="w-100">
+              Do košíku
             </Button>
           ) : (
             <div className="d-flex align-items-center flex-column" style={{ gap: '0.5rem' }}>
               <div className="d-flex align-items-center justify-content-center" style={{ gap: '0.5rem' }}>
-                <Button onClick={() => decreaseCartQuantity(id)}>-</Button>
+                <Button variant="outline-primary" onClick={() => decreaseCartQuantity(id)}>
+                  -
+                </Button>
                 <div>
-                  <span className="fs-3">{quantity}</span> in cart
+                  <span className="fs-3">{quantity}</span> v košíku
                 </div>
-                <Button onClick={() => increaseCartQuantity(id)}>+</Button>
+                <Button variant="outline-primary" onClick={() => increaseCartQuantity(id)}>
+                  +
+                </Button>
               </div>
-              <Button onClick={() => removeFromCart(id)} variant="danger" size="sm">
-                Remove
+              <Button onClick={() => removeFromCart(id)} variant="outline-danger" size="sm">
+                Odebrat
               </Button>
             </div>
           )}
